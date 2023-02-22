@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*---------------GENERAL-------------------*/
+
+@font-face {
+  font-family: basis;
+  src:url(./fonts/BasisGrotesqueArabicPro-Medium.ttf)
+}
+
+html, body{
+  font-size: 16px;
+  font-family: basis;
+}
+
+:root {
+  --dark-grey: rgb(14, 11, 33);
+  --white: rgb(229, 229, 231)
+}
+
+button, a {
+  font-family: basis;
+}
+
+h1 {
+  font-size: 5.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.3rem;
+  font-size: 1.3rem;
+}
+
+/*---------------MAIN DIV APP-------------------*/
+
+div.App {
+  display: flex;
+  flex-direction: column;
+}
+
+/*---------------HEADER-------------------*/
+
+div.header-div {
+  background-color: var(--dark-grey);
+  min-height: 35rem;
+  padding: 2rem 2rem 0 2rem;
+}
+
+ul.navbar-icon-burguer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem 0 2rem; 
+}
+
+div.header-info {
+  color: var(--white);
+  padding: 4rem 0 4rem 2rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+div.header-info button {
+  border: none;
+  padding: 1rem 2rem;
+  background-color: var(--white);
+  margin-top: 1.5rem;
+}
+
+/*---------------MAIN INFO SECTION-------------------*/
+
+section.icons-info-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4rem 0 4rem 0;
+  justify-content: center;
+}
+
+div.card-icons-info-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+div.card-icons-info-div img {
+  width: 10rem;
+  margin-bottom: 0.5rem;
+}
+
+div.card-icons-info-div h3 {
+  margin-bottom: 0.5rem;
+}
+
+div.card-icons-info-div p {
+  font-size: 0.9rem;
+  width: 50%;
+}
